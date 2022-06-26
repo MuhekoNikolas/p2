@@ -33,6 +33,9 @@ function showHomeContainer(){
 
     homeContainer.style.display = "block"
     homeContainer.style.top = "200px"
+    if(device.includes("pc")){
+      homeContainer.style.top = "100px"
+    }
 
     homeContainer.append(footerDiv)
     footerDiv.style.position = `relative`
@@ -53,6 +56,9 @@ function showProjectsContainer(){
 
     projectsContainer.style.display = "block"
     projectsContainer.style.top = "200px"
+    if(device.includes("pc")){
+      projectsContainer.style.top = "100px"
+    }
 
     projectsContainer.append(footerDiv)
     footerDiv.style.position = `absolute`
@@ -78,6 +84,9 @@ function showExperienceContainer(){
 
     experienceContainer.style.display = "block"
     experienceContainer.style.top = "200px"
+    if(device.includes("pc")){
+      experienceContainer.style.top = "100px"
+    }
 
     experienceContainer.append(footerDiv)
     footerDiv.style.position = `absolute`
@@ -98,6 +107,9 @@ function showContactsContainer(){
 
     contactsContainer.style.display = "block"
     contactsContainer.style.top = "200px"
+    if(device.includes("pc")){
+      contactsContainer.style.top = "100px"
+    }
 
     contactsContainer.append(footerDiv)
     footerDiv.style.position = `absolute`
