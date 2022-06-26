@@ -15,7 +15,7 @@ function showOrHideMenu(){
     navMenuStatus="visible"
     
   } else {
-    navMenu.style.top = "-100vh"
+    navMenu.style.top = "-120vh"
     navMenuStatus="hidden"
   }
   
