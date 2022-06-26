@@ -205,29 +205,7 @@ function changeTheme(){
   
 }
 
-function navBarAndContainerTopResize(){
-  if(device.includes("pc")){
-      if(device.includes("2000")){
-          navMenu.style.top = "100px"
-          newContainer.style.top = "100px"
-      }
-      if(device.includes("1200")){
-          navMenu.style.top = "50px"
-          newContainer.style.top = "50px"
-      }
-       
-    } else {
-      navMenu.style.top = "200px"
-      newContainer.style.top = "200px"
-    }
-}
 
-function resizeFunctions(){
-  navBarAndContainerTopResize()
-}
-
-
-window.setAttribute("onresize", "resizeFunctions()")
 
 function redirectTo(url){
   window.open(url)
