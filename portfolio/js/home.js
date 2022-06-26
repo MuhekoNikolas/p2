@@ -9,6 +9,9 @@ function showOrHideMenu(){
 
   if(navMenuStatus=="hidden"){
     navMenu.style.top = "200px"
+    if(device.includes("pc")){
+      navMenu.style.top = "100px"
+    }
     navMenuStatus="visible"
     
   } else {

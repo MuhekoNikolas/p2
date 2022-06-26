@@ -31,17 +31,20 @@ function experienceScrollAnimation(){
 function contactsScrollAnimation(){
   contactsBoxes = document.getElementsByClassName("contactsMediaBox")
   
-  if (contactsContainer.scrollTop>=900){
-    for(let i=0; i<contactsBoxes.length; i++){
-      if(contactsContainer.scrollTop>=900+(500*i)){
-        //contactsBoxes[i].style.left = "15%"
-        contactsBoxes[i].style.transform = "scale(1)"
-      } else{
-        //contactsBoxes[i].style.left = "-100%"
-        contactsBoxes[i].style.transform = "scale(0)"
-      }
-    }
+  if (!device.includes("pc")){
     
-  } 
+      if (contactsContainer.scrollTop>=900){
+        for(let i=0; i<contactsBoxes.length; i++){
+          if(contactsContainer.scrollTop>=900+(500*i)){
+            //contactsBoxes[i].style.left = "15%"
+            contactsBoxes[i].style.transform = "scale(1)"
+          } else{
+            //contactsBoxes[i].style.left = "-100%"
+            contactsBoxes[i].style.transform = "scale(0)"
+          }
+        }
+        
+      } 
+  }
   
 }

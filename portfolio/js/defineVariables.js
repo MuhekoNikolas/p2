@@ -71,6 +71,8 @@ function runStartUpFunctions(){
   changeExperienceAboutText()
   changeProjectsAboutText()
 
+  showContactsContainer()
+
   /*/
   generateContactBoxes()
   generateProjectBoxes()
