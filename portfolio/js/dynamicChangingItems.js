@@ -20,9 +20,12 @@ async function changeExperienceAboutText(){
   choosenQoute = allQoutes[qouteInd]
   choosenQouteText = choosenQoute.en
   
-  experienceAboutText.style.fontSize = "1.5rem"
-  if(choosenQouteText.length > 140 && device.includes("pc")){
-    experienceAboutText.style.fontSize = "1rem"
+  
+  if(device.includes("pc")){
+    experienceAboutText.style.fontSize = "1.5rem"
+    if(choosenQouteText.length > 140){
+      experienceAboutText.style.fontSize = "1rem"
+    }
   }
 
   basicExperienceText = "Well... Besides playing the guitar and gaming, I do love learning and practicing new frameworks and languages. Take a look at what I have mastered so-far, but before that... here is a qoute from"
@@ -45,9 +48,12 @@ async function changeProjectsAboutText(){
   choosenQoute = allQoutes[qouteInd]
   choosenQouteText = choosenQoute.en
 
-  projectsAboutText.style.fontSize = "1.5rem"
-  if(choosenQouteText.length > 140 && device.includes("pc")){
-    projectsAboutText.style.fontSize = "1rem"
+ 
+  if(device.includes("pc")){
+    projectsAboutText.style.fontSize = "1.5rem"
+    if(choosenQouteText.length > 140){
+      projectsAboutText.style.fontSize = "1rem"
+    }
   }
 
   basicProjectsText = "Here, I have kept this page full of all the projects I had fun working on. Surely one of them might catch your eyes... Also dont think i forgot your qoute from"
