@@ -163,6 +163,8 @@ canvas {
   width:100vw;
   height:600px;
 
+  display:none;
+
   background:white;
 }
 
