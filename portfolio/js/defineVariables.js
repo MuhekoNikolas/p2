@@ -72,6 +72,7 @@ function runStartUpFunctions(){
   changeProjectsAboutText()
 
   showExperienceContainer()
+  alert("device")
 
   /*/
   generateContactBoxes()
