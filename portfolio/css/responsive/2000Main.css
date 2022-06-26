@@ -158,6 +158,7 @@
     #footerDiv{
       position:relative;
       top:20px;
+      display:none;
       
       
       width:100vw;
