@@ -8,14 +8,25 @@ function showOrHideMenu(){
    
 
   if(navMenuStatus=="hidden"){
-    navMenu.style.top = "200px"
+    
     if(device.includes("pc")){
-      navMenu.style.top = "100px"
+      if(device.includes("2000")){
+          navMenu.style.top = "50px"
+          newContainer.style.top = "100px"
+      }
+      if(device.includes("1200")){
+          navMenu.style.top = "50px"
+          newContainer.style.top = "50px"
+      }
+       
+    } else {
+      navMenu.style.top = "200px"
+      newContainer.style.top = "200px"
     }
     navMenuStatus="visible"
     
   } else {
-    navMenu.style.top = "-120vh"
+    navMenu.style.top = "-200vh"
     navMenuStatus="hidden"
   }
   
@@ -34,7 +45,17 @@ function showHomeContainer(){
     homeContainer.style.display = "block"
     homeContainer.style.top = "200px"
     if(device.includes("pc")){
-      homeContainer.style.top = "100px"
+      if(device.includes("2000")){
+          homeContainer.style.top = "100px"
+        
+      }
+      if(device.includes("1200")){
+          homeContainer.style.top = "50px"
+          newContainer.style.top = "50px"
+      }
+       
+    } else {
+      contactsContainer.style.top = "200px"
     }
 
     homeContainer.append(footerDiv)
@@ -57,7 +78,15 @@ function showProjectsContainer(){
     projectsContainer.style.display = "block"
     projectsContainer.style.top = "200px"
     if(device.includes("pc")){
-      projectsContainer.style.top = "100px"
+      if(device.includes("2000")){
+          projectsContainer.style.top = "100px"
+      }
+      if(device.includes("1200")){
+          projectsContainer.style.top = "50px"
+      }
+       
+    } else {
+      projectsContainer.style.top = "200px"
     }
 
     projectsContainer.append(footerDiv)
@@ -85,7 +114,15 @@ function showExperienceContainer(){
     experienceContainer.style.display = "block"
     experienceContainer.style.top = "200px"
     if(device.includes("pc")){
-      experienceContainer.style.top = "100px"
+      if(device.includes("2000")){
+          experienceContainer.style.top = "100px"
+      }
+      if(device.includes("1200")){
+          experienceContainer.style.top = "50px"
+      }
+       
+    } else {
+      experienceContainer.style.top = "200px"
     }
 
     experienceContainer.append(footerDiv)
@@ -106,9 +143,17 @@ function showContactsContainer(){
     currentContainer.style.display = "none"
 
     contactsContainer.style.display = "block"
-    contactsContainer.style.top = "200px"
+    
     if(device.includes("pc")){
-      contactsContainer.style.top = "100px"
+      if(device.includes("2000")){
+          contactsContainer.style.top = "100px"
+      }
+      if(device.includes("1200")){
+          contactsContainer.style.top = "50px"
+      }
+       
+    } else {
+      contactsContainer.style.top = "200px"
     }
 
     contactsContainer.append(footerDiv)
@@ -160,6 +205,29 @@ function changeTheme(){
   
 }
 
+function navBarAndContainerTopResize(){
+  if(device.includes("pc")){
+      if(device.includes("2000")){
+          navMenu.style.top = "100px"
+          newContainer.style.top = "100px"
+      }
+      if(device.includes("1200")){
+          navMenu.style.top = "50px"
+          newContainer.style.top = "50px"
+      }
+       
+    } else {
+      navMenu.style.top = "200px"
+      newContainer.style.top = "200px"
+    }
+}
+
+function resizeFunctions(){
+  navBarAndContainerTopResize()
+}
+
+
+window.setAttribute("onresize", "resizeFunctions()")
 
 function redirectTo(url){
   window.open(url)

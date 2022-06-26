@@ -2,14 +2,14 @@
     
     
     
-@media all and (min-width:2000px){
+@media all and (min-width:1200px){
       
     
       
     
     :root{
     
-      --device: "pc2000";
+      --device: "pc1200";
       --pfpImageUrl: url("https://images-ext-1.discordapp.net/external/5E1X1NyA8jy7WDK4YNAifF7S39mY3yni3Y0BzhAY5lg/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/564452749425639483/499dba7f4169ec65c13b5af6f5c524f0.webp");
       --darkModeBackground: #1c1c1c;
       --darkModeOppositeBackground: #E1D9D1;
@@ -83,7 +83,7 @@
     
     #homeContainer{
       position:fixed;
-      top:100px;
+      top:50px;
       left:0px;
       
       width:100vw;
@@ -101,7 +101,7 @@
     
     #projectsContainer{
       position:fixed;
-      top:100px;
+      top:50px;
       left:0px;
       
       width:100vw;
@@ -120,7 +120,7 @@
     
     #experienceContainer{
       position:fixed;
-      top:100px;
+      top:50px;
       left:0px;
       
       width:100vw;
@@ -138,7 +138,7 @@
     
     #contactsContainer{
       position:fixed;
-      top:100px;
+      top:50px;
       left:0px;
       
       width:100vw;
@@ -175,7 +175,7 @@
     
       
       width:100vw;
-      height:100px;
+      height:50px;
     
       background:white;
       z-index:200;
@@ -188,7 +188,7 @@
     #navMenu{
     
       position:fixed;
-      top:-200vh;
+      top:-100vh;
       
       left:0px;
     
@@ -262,6 +262,8 @@
     
       font-size:3rem;
       
+      color:orange;
+      color:blue;
       white-space:nowrap;
     }
     
@@ -294,7 +296,7 @@
     
     #navBarMenuButton h1{
       color:white;
-      font-size:2.5rem;
+      font-size:1rem;
     }
     
     
@@ -303,10 +305,10 @@
     
     .sectionPfpDiv{
       position:relative;
-      top:200px;
+      top:100px;
     
-      width:400px;
-      height:400px;
+      width:250px;
+      height:250px;
     
       border-radius:50% 25%;
     
@@ -321,13 +323,13 @@
     .sectionTextDiv{
       position:relative;
       
-      top:-350px;
+      top:-250px;
       left:0vw;
     
       text-align: center;
     
       width:50vw;
-      height:400px;
+      height:auto;
       
       background:none;
     
@@ -343,7 +345,7 @@
       position:relative;
       color:green;
       
-      font-size:2.5rem;
+      font-size:1rem;
     
       text-shadow:2px 5px 5px blue;
     
@@ -354,7 +356,7 @@
     .sectionTextAboutMe{
       position:relative;
     
-      font-size:3rem;
+      font-size:2rem;
     
       text-align:end;
     

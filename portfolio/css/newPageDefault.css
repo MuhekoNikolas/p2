@@ -191,6 +191,8 @@ canvas {
   
   left:0px;
 
+  border-top:100px solid var(--navBarColor);
+
   
   width:100vw;
   height:100vh;

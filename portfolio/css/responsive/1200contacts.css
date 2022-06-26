@@ -1,6 +1,6 @@
     
 
-@media all and (min-width:2000px){
+@media all and (min-width:1200px){
     
     
     #contactsMediasDiv div{
@@ -9,12 +9,12 @@
     
     #contactsMediasDiv{
       position:relative;
-      top:0px;
+      top:-350px;
     
       
       width:100vw;
       height:auto;
-      padding-bottom:40%;
+      padding-bottom:none;
     
       background:white;
       background:none;
@@ -38,7 +38,7 @@
       margin-top:100px;
       
       max-width:70%;
-      height:500px;
+      height:300px;
     
       opacity:1;
     
@@ -58,7 +58,7 @@
       left:0px;
     
       width:100%;
-      height:200px;
+      height:125px;
     
       background:var(--darkModeOppositeBackground);
       
@@ -67,13 +67,13 @@
     
     .contactsMediaPfp{
       position:relative;
-      top:-110px;
+      top:-55px;
       left:50px;
     
       
     
-      width:190px;
-      height:190px;
+      width:100px;
+      height:100px;
     
       border-radius:50%;
     
@@ -89,12 +89,12 @@
     
     .contactsMediaTextDiv{
       position:relative;
-      top:-300px;
+      top:-145px;
       right:-20%;
     
       text-align:end;
       
-      height:300px;
+      height:200px;
       width:80%;
     
       background:none;
@@ -106,7 +106,7 @@
       position:relative;
     
       
-      font-size:2.5rem;
+      font-size:1.5rem;
       color:orange;
     }
     
@@ -114,7 +114,7 @@
     .contactsMediaTextDiv p{
       position:relative;
     
-      font-size:2rem;
+      font-size:1rem;
     
       color:var(--darkModeOppositeBackground);
     }
@@ -122,10 +122,10 @@
     
     .contactsMediaBoxContactButton{
       position:relative;
-      top:-425px;
+      top:-250px;
       
       width:60%;
-      height:100px;
+      height:50px;
     
       border-radius:50px;
       
@@ -137,7 +137,7 @@
     }
     
     .contactsMediaBoxContactButton h1{
-      font-size:2.5rem;
+      font-size:1rem;
       color:var(--darkModeBackground);
     }
     
